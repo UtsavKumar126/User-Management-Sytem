@@ -1,0 +1,144 @@
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:1rem;
+    padding: 1rem 1rem;
+}
+#addCustomer{
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#searchBy{
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+}
+#searchBox{
+    background-color: rgb(9, 9, 9);
+    border-radius: 1rem;
+}
+#searchBox input{
+    width:80%;
+    height: 100%;
+    padding: 0.8rem 1rem;
+    border: none;
+    background-color: rgb(9, 9, 9);
+    font-size: 16px;
+    color:white;
+    border-radius: 1rem
+}
+#searchBox input:focus{
+    outline: none;
+    border: none;
+}
+#sync{
+    display: none;
+}
+#sync-visible{
+    display: block;
+    padding: 0.8rem 1rem;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+th{
+    padding: 1rem 2rem;
+    background-color:black;
+    font-size: 20px;
+    font-weight: 400;
+    color:white;
+}
+table{
+    margin-left: 2rem;
+    border-collapse: collapse;
+}
+td{
+    padding:0.5rem 0.5rem;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 400;
+    color:white;
+    text-align: center;
+    max-width: 200px;
+    overflow: hidden;
+    font-size: 14px;
+}
+#dropDown{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    min-width: 160px;
+    background-color:grey;
+    border-radius: 1rem;
+    color: white;
+}
+#dropDownContent{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#dropDownContent div{
+    padding: 12px 16px;
+    display: block;
+    color: white;
+    background-color: grey;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+#dropDown:hover #dropDownContent{
+    display: block;
+    background-color: grey;
+    border-radius: 1rem;
+    transition: all 0.2s;
+}
+
+/* Css for edit Box */
+#Edit-details{
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+    background-color: white;
+    padding: 1rem 1rem;
+    border: 1px solid black;
+    border-radius: 1.5rem;
+}
+#Edit-details p{
+    margin-top: 0.5rem;
+}
+#Edit-details input{
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    border: 0.5px solid black;
+}
+#Edit-details input:focus{
+    border: none;
+    outline: 1px solid blue ;
+}
+#EditDetails{
+    padding: 0.5rem 2rem;
+    color: white;
+    background-color: chartreuse;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+#crossIcon{
+    cursor: pointer;
+}
+

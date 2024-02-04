@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./customerList.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="/">Login</a>
+        <a href="addCustomer.html">Add Customer</a>
+        <a href="customerList.html">Customer List</a>
+    </div>
+    <div>
+        <div id="main">
+            <button id="addCustomer">
+                Add Customer
+            </button>
+            <div id="dropDown">
+                <div id="searchBy">Search By</div>
+                <div id="dropDownContent">
+                    <div onclick="setDropdown(this)" data-value="firstName">First Name</div>
+                    <div onclick="setDropdown(this)" data-value="city">City</div>
+                    <div onclick="setDropdown(this)" data-value="email">Email</div>
+                    <div onclick="setDropdown(this)" data-value="phone">Phone</div>
+                </div>
+            </div>
+            <div id="searchBox">
+                <input type="text" placeholder="Search" id="search">
+                <i class="fa-solid fa-magnifying-glass fa-flip-horizontal fa-l" style="color: white;"></i>
+            </div> 
+            <button id="sync">
+                Sync
+            </button>      
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Street</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="customerList">
+            </tbody>
+        </table>
+        <!-- Edit User  -->
+        <div id="Edit-details">
+            <div style="display: flex;align-items: center;justify-content: center;gap:1rem">
+                <h1>Edit Details</h1>
+                <i class="fa-solid fa-xmark fa-2xl " id="crossIcon" style="color: #161717;" onclick="displayNone()"></i>
+            </div>
+            <p>
+                <input type="text" class="deatils" id="Edit-first-name" placeholder="First Name">
+                <input type="text" class="deatils" id="Edit-last-name"placeholder="Last Name">
+            </p>
+            <p>
+                <input type="text" class="deatils" id="Edit-street" placeholder="Street">
+                <input type="text" class="deatils" id="Edit-address" placeholder="Address">
+            </p>
+            <p>
+                <input type="text" class="deatils" id="Edit-city" placeholder="City">
+                <input type="text" class="deatils" id="Edit-state" placeholder="State">
+            </p>
+            <p>
+                <input type="text" class="deatils" id="Edit-email" placeholder="Email">
+                <input type="text" class="deatils" id="Edit-phone" placeholder="Phone">
+            </p>
+            <p>
+                <button id="EditDetails">Save</button>
+            </p>
+        </div> 
+    </div>
+    <script src="./scripts/customerList.js"></script>
+</body>
+</html>
